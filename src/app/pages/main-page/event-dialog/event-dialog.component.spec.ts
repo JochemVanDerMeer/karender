@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RaceDialogComponent } from './race-dialog.component';
+import { RaceDialogComponent } from './event-dialog.component';
 
 describe('RaceDialogComponent', () => {
   let component: RaceDialogComponent;

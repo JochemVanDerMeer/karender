@@ -1,8 +1,9 @@
-import { Event } from '../interfaces/event';
+import { RunEvent } from '../interfaces/event';
 
-export const RACES: Event[] = [
-  { id: 1, name: 'Marathon Rotterdam', date: "01-01-2024", distances: [42.2, 10.5]  },
-  { id: 2, name: 'Marathon Amsterdam', date: "01-01-2024", distances: [42.2, 10.5] },
-  { id: 3, name: 'Ijsselloop', date: "01-01-2024", distances: [15, 10, 5] },
-  { id: 4, name: 'Stevensloop', date: "01-01-2024", distances: [15, 10, 5] }
+export const RACES: RunEvent[] = [
+  { id: 1, name: 'Marathon Rotterdam', date: "16-05-2024", distances: [42.2, 10.5], beschrijving: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper."  },
+  { id: 2, name: 'Marathon Amsterdam', date: "17-05-2024", distances: [42.2, 10.5], beschrijving: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper." },
+  { id: 3, name: 'Ijsselloop', date: "18-05-2024", distances: [15, 10, 5], beschrijving: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper."},
+  { id: 4, name: 'Stevensloop', date: "19-05-2024", distances: [15, 10, 5], beschrijving: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper." },
+  { id: 5, name: 'Zevenheuvelenloop', date: "20-05-2024", distances: [15, 7], beschrijving: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper." }
 ];

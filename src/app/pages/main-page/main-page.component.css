@@ -1,0 +1,21 @@
+.toolbar {
+  background-color: aquamarine;
+}
+
+.mat-grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Optional: Adjust based on your layout requirements */
+}
+
+.mat-grid-tile {
+  flex-basis: 48%; /* Adjust as per your layout needs */
+}
+
+.mat-list-item {
+  padding-top: 30px;
+}
+
+.page-title {
+  color: black;
+}

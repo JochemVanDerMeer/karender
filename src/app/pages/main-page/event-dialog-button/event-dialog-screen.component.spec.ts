@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogScreenComponent } from './dialog-screen.component';
+import { DialogScreenComponent } from './event-dialog-screen.component';
 
 describe('DialogScreenComponent', () => {
   let component: DialogScreenComponent;

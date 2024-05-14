@@ -1,1 +1,35 @@
-<p>main-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Running Races</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@angular/material/prebuilt-themes/indigo-pink.css">
+</head>
+<body class="mat-typography">
+<mat-toolbar color="primary">
+  <div style="text-align: center">
+    <mat-toolbar-row class="toolbar">
+      <span class="page-title">Karender</span>
+    </mat-toolbar-row>
+  </div>
+</mat-toolbar>
+
+<div class="mat-grid-list">
+
+  <div class="mat-grid-tile" style="flex: 1;">
+    <app-event-calendar (selectedDateEvent)="showDate($event)"></app-event-calendar>
+  </div>
+
+  <div class="mat-grid-tile" style="flex: 1;" style="margin: 20px; padding: 20px;">
+    <div *ngFor="let event of events">
+      <div *ngIf="checkDate(currentDate, event.date)">
+        <h3>{{ event.name }}</h3>
+        <p>{{ currentDate}}</p>
+        <app-event-dialog-button [event]=event></app-event-dialog-button>
+      </div>
+    </div>
+  </div>
+</div>
